@@ -1,2 +1,3 @@
-# python_3.10_all_new_features
-All The Important Features and Changes in Python 3.10
+# Python 3.10 : What's the new ?
+The release of Python 3.10 is getting closer, so it’s time to take a look at most important new features and changes it’s going to bring
+
