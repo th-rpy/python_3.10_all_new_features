@@ -22,4 +22,8 @@ To try these new features, we will have to install the Alpha/Beta version of Pyt
 - If you are under Windows, you just have to **Download Python Executable** Installer from [here](https://www.python.org/ftp/python/3.10.0/python-3.10.0a6-amd64.exe), then you need to **Run Executable Installer**. 
 - If you are on MacOs, I can't help you. I am not rich enough to buy a Mac!!! 😒, but this [link](https://opensource.com/article/19/5/python-3-default-mac) may help you. 
 
+Yeeeep, Python 3.10 is finally installed ✌ , now we can take a look at all the new features . Let's start 😉😎. 
+
+
+
 
