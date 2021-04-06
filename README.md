@@ -4,4 +4,22 @@ The release of ✨Python 3.10✨ is getting closer, so it's time to take a ride 
 
 ## Install Python 3.10 Alpha version
 
+To try these new features, we will have to install the Alpha/Beta version of Python 3.10. Remember that this last version is not yet stable. 
+- If you are under Linux (Ubuntu), you just have to follow the steps below : 
+
+     ```sh
+     # Download the latest version for Linux
+     wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0a6.tgz
+     # Unpack Python source code
+     tar xzvf Python-3.10.0a6.tgz
+    cd Python-3.10.0a6
+    # Compile Python source with static libraries
+    ./configure --prefix=$HOME/python-3.10.0a6
+    make
+    make install
+    $HOME/python-3.10.0a6/bin/python3.10
+    ```
+- If you are under Windows, you just have to **Download Python Executable** Installer from [here](https://www.python.org/ftp/python/3.10.0/python-3.10.0a6-amd64.exe), then you need to **Run Executable Installer**. 
+- If you are on MacOs, I can't help you. I am not rich enough to buy a Mac!!! 😒, but this [link](https://opensource.com/article/19/5/python-3-default-mac) may help you. 
+
 
