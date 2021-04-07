@@ -156,3 +156,6 @@ Patterns can be nested in arbitrary ways. For example, if our data is a short li
             print("Something else is found in the list.")
     ```
 If you want to see more examples and a full tutorial, check out [PEP 636](https://www.python.org/dev/peps/pep-0636/).
+
+# Conclusion
+Python 3.10 brings many new interesting features, but as it is an alpha version (not yet stable), it is still far from being fully tested and ready for production. So it is not recommended to start using it right away.
