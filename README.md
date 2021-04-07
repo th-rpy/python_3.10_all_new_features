@@ -93,3 +93,20 @@ Pattern matching will be presented in the common form: match statement and case 
             case _:
                 return "Just another x..."
     ```
+
+- **Example 2: Patterns with a literal and variable** 
+    ```python
+    def func(X):  # X = (x, y, z)
+        # point is an (x, y) tuple
+        match point:
+            case (0, 0):
+                print("Origin")
+            case (0, y):
+                print(f"Y={y}")
+            case (x, 0):
+                print(f"X={x}")
+            case (x, y):
+                print(f"X={x}, Y={y}")
+            case _:
+                raise ValueError("Not a point")
+    ```
