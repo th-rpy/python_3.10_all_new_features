@@ -141,7 +141,6 @@ We can add an if clause to a pattern, called a guard. If the guard is false, mat
             print(f"Point is not on the diagonal.")
     ```
 - **Example 5: Nested Patterns**
-Nested patterns
 Patterns can be nested in arbitrary ways. For example, if our data is a short list of points, they could be matched in the following way:
     ```python
     match points:
