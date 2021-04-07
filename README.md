@@ -80,4 +80,16 @@ This features was contributed by Pablo Galindo and Batuhan Taskaya.
 We can say that the most important feature will be introduced in this new Python 3. 
 Pattern matching will be presented in the common form: match statement and case statements of patterns with associated actions.  Patterns can be: sequences, mappings, primitive data types as well as class instances. By using pattern matching, we are able to, for example, extract information from complex data types, plug into the data structure, and apply specific actions based on different data forms. This is not just the switch/case syntax we all know from other programming languages, but it also adds powerful functionality that we should explore. 
 
-
+- **Example 1: Simple pattern: match to a literal** 
+    ```python
+    def func(x):
+        match x:
+            case "x1":
+                return "x1 .."
+            case "x2":
+                return "x2"
+            case "x3" | "x4":  # Multiple literals can be combined with `|`
+                return "Yay, "
+            case _:
+                return "Just another x..."
+    ```
