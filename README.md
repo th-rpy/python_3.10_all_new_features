@@ -24,6 +24,10 @@ To try these new features, we will have to install the Alpha/Beta version of Pyt
 
 Yeeeep, Python 3.10 is finally installed ✌ , now we can take a look at all the new features . Let's start 😉😎. 
 
+# New Features
+
+The new version of python has arrived with many features. In this article, I will show you the most important of them. So, So buckle up, the adventure with 🐍**Python** will begin in a few seconds 🚀🕓. 
+
 ### New Type Union Operator
 Instead of using typing.union to express the syntax **"either type X or type Y"**, the new version of python introduces the new union operator of type *X | Y*. This new operator allows us to code more cleanly and efficiently.
 
@@ -158,4 +162,4 @@ Patterns can be nested in arbitrary ways. For example, if our data is a short li
 If you want to see more examples and a full tutorial, check out [PEP 636](https://www.python.org/dev/peps/pep-0636/).
 
 # Conclusion
-Python 3.10 brings many new interesting features, but as it is an alpha version (not yet stable), it is still far from being fully tested and ready for production. So it is not recommended to start using it right away.
+Python 3.10 brings many new interesting features, but as it is an alpha version (not yet stable), it is still far from being fully tested and ready for production. So it is not recommended to start using it right away. 
