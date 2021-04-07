@@ -42,6 +42,19 @@ Instead of using typing.union to express the syntax **"either type X or type Y"*
     ```
 This features was contributed by Ken Jin. Visit this link ([PEP 612](https://www.python.org/dev/peps/pep-0612)) for more details. 
 
+### TypeAlias Annotation
+The TypeAlias annotation concept was first introduced in PEP 484 (Python-Version: 3.5) . A reimplementation of this concept will be presented in PEP 613 (Python-Version: 3.10). The main reason for this reimplementation is that the old concept is very difficult for type checkers to distinguish between type aliases and ordinary assignments.  See the following example:
+- **Old Version**
+     ```python
+    StrCache = 'Cache[str]'  # a type alias
+    LOG_PREFIX = 'LOG[DEBUG]'  # a module constant
+    ```
+- **New Version**
+     ```python
+    StrCache: TypeAlias = 'Cache[str]'  # a type alias
+    LOG_PREFIX = 'LOG[DEBUG]'  # a module constant
+    ```
+This features was contributed by  Mikhail Golubev. Visit this link ([PEP 613](https://www.python.org/dev/peps/pep-0613)) for more details.
 
 
 
