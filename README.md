@@ -56,5 +56,25 @@ The TypeAlias annotation concept was first introduced in PEP 484 (Python-Version
     ```
 This features was contributed by  Mikhail Golubev. Visit this link ([PEP 613](https://www.python.org/dev/peps/pep-0613)) for more details.
 
+### Better error messages in the parser
+Suppose you want to write a code that manipulates for example a dictionary (or tuple , list or set ) and you forget to close the brackets (or the parentheses). If you are working with python 3, when you execute your code, the interpreter will display a syntax error like this one **"SyntaxError : unexpected EOF"**. 
+However, with this new version, when you try to parse code that contains unclosed parentheses or brackets, the interpreter will displays a more informative error with the location of the unclosed parenthesis or brackets. 
+- **Old Version**
+     ```python
+    File "example.py", line 3
+    some_other_code = foo()
+                    ^
+    SyntaxError: invalid syntax
+    ```
+- **New Version**
+     ```python
+    File "example.py", line 1
+    expected = {9: 1, 18: 2, 19: 2, 27: 3, 28: 3, 29: 3, 36: 4, 37: 4,
+               ^
+    SyntaxError: '{' was never closed
+    ```
+This features was contributed by Pablo Galindo and Batuhan Taskaya.
+
+
 
 
