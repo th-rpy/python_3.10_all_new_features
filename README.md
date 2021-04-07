@@ -24,6 +24,9 @@ To try these new features, we will have to install the Alpha/Beta version of Pyt
 
 Yeeeep, Python 3.10 is finally installed ✌ , now we can take a look at all the new features . Let's start 😉😎. 
 
+### New Type Union Operator
+Instead of using typing.union to express the syntax **"either type X or type Y"**, the new version of python introduces the new union operator of type *X | Y*. This new operator allows us to code more cleanly and efficiently.
+
 
 
 
