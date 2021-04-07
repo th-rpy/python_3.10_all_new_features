@@ -27,6 +27,21 @@ Yeeeep, Python 3.10 is finally installed ✌ , now we can take a look at all the
 ### New Type Union Operator
 Instead of using typing.union to express the syntax **"either type X or type Y"**, the new version of python introduces the new union operator of type *X | Y*. This new operator allows us to code more cleanly and efficiently.
 
+- **Old Version**
+     ```python
+    from typing import Union
+    def square(number: Union[int, float]) -> Union[int, float]:
+        return number ** 2
+    isinstance('3', int | str)
+    ```
+- **New Version**
+     ```python
+    def square(number: int | float) -> int | float:
+        return number ** 2
+    isinstance('3', int | str)
+    ```
+This features was contributed by Ken Jin. Visit this link ([PEP 612](https://www.python.org/dev/peps/pep-0612)) for more details. 
+
 
 
 
