@@ -130,3 +130,30 @@ Pattern matching will be presented in the common form: match statement and case 
                 case _:
                     print("Not a point")
     ```
+
+- **Example 4: Guard**
+We can add an if clause to a pattern, called a guard. If the guard is false, match moves on to try the next case block. Note that the value capture takes place before the guard is evaluated:
+    ```python
+    match point:
+        case Point(x, y) if x == y:
+            print(f"The point is located on the diagonal Y=X at {x}.")
+        case Point(x, y):
+            print(f"Point is not on the diagonal.")
+    ```
+- **Example 5: Nested Patterns**
+Nested patterns
+Patterns can be nested in arbitrary ways. For example, if our data is a short list of points, they could be matched in the following way:
+    ```python
+    match points:
+        case []:
+            print("No points in the list.")
+        case [Point(0, 0)]:
+            print("The origin is the only point in the list.")
+        case [Point(x, y)]:
+            print(f"A single point {x}, {y} is in the list.")
+        case [Point(0, y1), Point(0, y2)]:
+            print(f"Two points on the Y axis at {y1}, {y2} are in the list.")
+        case _:
+            print("Something else is found in the list.")
+    ```
+If you want to see more examples and a full tutorial, check out [PEP 636](https://www.python.org/dev/peps/pep-0636/).
