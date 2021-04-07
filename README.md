@@ -110,3 +110,23 @@ Pattern matching will be presented in the common form: match statement and case 
             case _:
                 raise ValueError("Not a point")
     ```
+
+- **Example 3: Patterns and classes** 
+    ```python
+    class Point:
+        x: int
+        y: int
+
+        def location(point):
+            match point:
+                case Point(x=0, y=0):
+                    print("Origin is the point's location.")
+                case Point(x=0, y=y):
+                    print(f"Y={y} and the point is on the y-axis.")
+                case Point(x=x, y=0):
+                    print(f"X={x} and the point is on the x-axis.")
+                case Point():
+                    print("The point is located somewhere else on the plane.")
+                case _:
+                    print("Not a point")
+    ```
